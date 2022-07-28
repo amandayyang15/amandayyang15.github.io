@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'neutralface-bold';
+    src: url('neutralface-bold-webfont.woff2') format('woff2');
+  }
+
+@font-face {
+    font-family: 'neutralface';
+    src: url('fonts/neutralface-webfont.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'mazius';
+    src: url('fonts/MAZIUSREVIEW20.09-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'avenir';
+    src: url('fonts/Avenir Next LT Pro Regular.woff2') format('woff2');
+}
+
+body {
+    background-color: #0E1010;
+    color: white;
+    font-family: 'avenir', sans-serif;
+}
+
+h1 {
+    font-family: 'neutralface-bold', sans-serif;
+}
+
+h2 {
+    font-family: 'mazius', sans-serif;
+}
