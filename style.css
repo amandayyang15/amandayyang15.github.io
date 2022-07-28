@@ -18,6 +18,39 @@
     src: url('fonts/Avenir Next LT Pro Regular.woff2') format('woff2');
 }
 
+.container {
+
+}
+
+nav{
+    color: white;
+    font-family: 'neutralface', sans-serif;
+    position: sticky;
+    list-style-type: none;
+    width: 70%;
+    padding: 30px;
+    background-color: pink;
+    margin: auto;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    background-color: aqua;
+    float: right;
+}
+
+nav li {
+    display: inline;
+    margin-left: 60px;
+    align-items: center;
+    background: lightblue;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
 body {
     background-color: #0E1010;
     color: white;
