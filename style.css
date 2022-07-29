@@ -89,13 +89,22 @@ nav a:hover {
 /*HOME PAGE*/
 .introbox {
     width: 70%;
-    padding: 20px;
+    padding: 60px;
     background: white;
     color: #0E1010 ;
-    border-radius: 20px;
+    border-radius: 41px;
 
 }
 
-.introbox-text{
+.social-icons{
+    display: flex;
+    justify-content: row;
+    float: left;
 
+}
+
+.introbox-bottons {
+    display: flex;
+    justify-content: row;
+    float: right;
 }
