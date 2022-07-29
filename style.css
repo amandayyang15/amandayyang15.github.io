@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'neutralface-bold';
     src: url('neutralface-bold-webfont.woff2') format('woff2');
-  }
+}
 
 @font-face {
     font-family: 'neutralface';
@@ -18,39 +18,14 @@
     src: url('fonts/Avenir Next LT Pro Regular.woff2') format('woff2');
 }
 
-.container {
-
-}
-
-nav{
-    color: white;
-    font-family: 'neutralface', sans-serif;
-    position: sticky;
-    list-style-type: none;
-    width: 70%;
-    padding: 30px;
-    background-color: pink;
+* {
     margin: auto;
+    width: 90%;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav ul{
-    list-style-type: none;
-    margin: 0;
-    background-color: aqua;
-    float: right;
-}
-
-nav li {
-    display: inline;
-    margin-left: 60px;
-    align-items: center;
-    background: lightblue;
-}
-
-nav a:hover {
-    font-weight: bold;
-}
-
+/*FONTS*/
 body {
     background-color: #0E1010;
     color: white;
@@ -58,9 +33,69 @@ body {
 }
 
 h1 {
-    font-family: 'neutralface-bold', sans-serif;
+    font-family: 'mazius', sans-serif;
 }
 
 h2 {
     font-family: 'mazius', sans-serif;
+}
+
+h3 {
+
+}
+
+h4 {
+    font-family: 'neutralface-bold', sans-serif;
+}
+
+/*NAVIGATION BAR*/
+nav {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    padding: 20px;
+    font-family: 'neutralface', sans-serif;
+    border-bottom: 2px solid #272D2B;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    /*background-color: aqua;*/
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 3em;
+    /*background: lightblue;*/
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.logo {
+    float: left;
+    font-size: 1.8em;
+}
+
+/*HOME PAGE*/
+.introbox {
+    width: 70%;
+    padding: 20px;
+    background: white;
+    color: #0E1010 ;
+    border-radius: 20px;
+
+}
+
+.introbox-text{
+
 }
