@@ -21,7 +21,6 @@
 * {
     margin: auto;
     width: 90%;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -33,48 +32,64 @@ body {
 }
 
 h1 {
+    margin: 0;
+    padding: 0;
     font-family: 'mazius', sans-serif;
+    display: inline;
 }
 
 h2 {
+    margin: 0;
+    padding: 0;
     font-family: 'mazius', sans-serif;
 }
 
 h3 {
-
+    margin: 0;
+    padding: 0;
 }
 
 h4 {
+    margin: 0;
+    padding: 0;
     font-family: 'neutralface-bold', sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'avenir', sans-serif;
+    font-size: 1.2em;
+    display: inline;
 }
 
 /*NAVIGATION BAR*/
 nav {
     display: flex;
-    width: 100%;
-    margin: 0;
-    align-items: center;
+    width: 100% !important;
     padding: 20px;
     font-family: 'neutralface', sans-serif;
     border-bottom: 2px solid #272D2B;
+
+
 }
 
-nav ul{
-    display: flex;
-    justify-content: flex-end;
-    /*background-color: aqua;*/
+.navbar{
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.navbar div {
+    margin: 0;
+    text-align: right;
+    justify-items: end;
 }
 
 nav a{
     color: white;
     text-decoration: none;
-}
-
-nav li {
-    list-style-type: none;
-    display: inline;
-    margin-left: 3em;
-    /*background: lightblue;*/
 }
 
 nav a:hover {
@@ -86,25 +101,93 @@ nav a:hover {
     font-size: 1.8em;
 }
 
+.logo a:hover { /*needa make this work (mb JS)*/
+    letter-spacing: 0.5em;
+}
+
 /*HOME PAGE*/
-.introbox {
+.introBox {
     width: 70%;
-    padding: 60px;
+    padding: 70px;
+    margin-top: 10%;
     background: white;
     color: #0E1010 ;
     border-radius: 41px;
-
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 2em;
 }
 
-.social-icons{
+.introBox-text{
+    width: auto;
+    grid-column-end: span 2;
+    white-space: normal;
     display: flex;
-    justify-content: row;
-    float: left;
+    margin: 0;
+    flex-direction: column;
+}
 
+.social-icons-row {
+    grid-area: 2/1/2/2;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    text-align: left;
+}
+
+.social-icons-row a{
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+
+}
+.linkedin:hover {
+    fill: #4F5B58;
+}
+.github:hover  {
+    fill: #4F5B58;
+}
+.figma:hover  {
+    fill: #4F5B58;
+}
+.behance:hover  {
+    fill: #4F5B58;
 }
 
 .introbox-bottons {
-    display: flex;
-    justify-content: row;
-    float: right;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: right;
+    gap: 2em;
+}
+
+.light-button { /*figure out how to add border to button*/
+    justify-self: right;
+    text-align: center;
+    padding: 3px;
+    border: black;
+    border-radius: 18px;
+}
+
+.dark-button {
+    color: white;
+    justify-self: right;
+    text-align: center;
+    padding: 3px;
+    background-color: #272D2B;
+    border-radius: 18px;
+}
+
+.light-button:hover {
+    font-weight: bold;
+    border-radius: 18px;
+}
+
+.dark-button:hover {
+    font-weight: bold;
 }
