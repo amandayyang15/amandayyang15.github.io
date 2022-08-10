@@ -94,7 +94,7 @@ nav a{
 }
 
 nav a:hover {
-    font-weight: bold;
+    color: #859591;
 }
 
 .logo {
@@ -108,10 +108,9 @@ nav a:hover {
 
 /*HOME PAGE > INTRO BOX*/
 .introBox {
-    margin: auto;
     width: 70%;
     padding: 70px;
-    margin: 10% auto;
+    margin: 12% auto;
     background: white;
     color: #0E1010 ;
     border-radius: 41px;
@@ -172,6 +171,7 @@ nav a:hover {
     border: 1px solid #272D2B;
     display: flex;
     align-self: center;
+    text-decoration: none;
 }
 
 .dark-button {
@@ -184,14 +184,17 @@ nav a:hover {
     background-color: #272D2B;
     border-radius: 30px;
     align-self: center;
+    text-decoration: none;
 }
 
 .light-button:hover {
-    font-weight: bolder;
+    color: #4F5B58;
+    border: 1px solid #4F5B58;
 }
 
+
 .dark-button:hover {
-    font-weight: bolder;
+    background-color: #4F5B58;
 }
 
 /*HOME PAGE > INTEREESTS BOX*/
@@ -208,7 +211,7 @@ nav a:hover {
     text-align: center;
 }
 
-.interests2-grid{
+.interests-grid{
     position: relative;
     width: 70%;
     margin: auto;
@@ -217,39 +220,44 @@ nav a:hover {
     gap: 0.7em;
 }
 
-.interests2-grid div {
-
+.interest-card{
     height: 13rem;
-    padding: 3rem;
+    padding: 2rem;
     font-family: 'neutralface-bold', sans-serif;
     text-align: center;
     background: #272D2B;
     border-radius: 25px;
     color: white ;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.interests1-grid{
-    position: absolute;
-    margin: auto;
-    width: 70%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.7em;
-}
-
-.interests1-grid div {
-    height: 13rem;
-    padding: 3rem;
-    font-family: 'neutralface-bold', sans-serif;
-    text-align: center;
-    background: #272D2B;
-    border-radius: 25px;
-    color: white ;
+.card-overlay {
+    padding-top: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+}
+
+.card-overlay svg {
+    height: 30px;
+}
+
+.card-overlay .light-button {
+    border: 1px solid #859591;
+    color: #859591;
+}
+
+.card-overlay .light-button:hover {
+    border: 1px solid #4F5B58;
+    color: #4F5B58;
+}
+
+.interest-card {
+    opacity: 0;
+}
+
+.interest-card:hover {
+    opacity: 1;
 }
