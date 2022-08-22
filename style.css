@@ -22,11 +22,16 @@
     box-sizing: border-box;
 }
 /*FONTS*/
+
 body {
     background-color: #0E1010;
     color: white;
+    margin: 0;
     font-family: 'avenir', sans-serif;
-    width: 75vw;
+}
+
+.pageContents {
+    width: 70vw;
     margin: auto;
 }
 
@@ -70,7 +75,8 @@ p {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 25px 20px;
+    align-content: center;
+    padding: 25px 25px;
     font-family: 'neutralface', sans-serif;
     border-bottom: 2px solid #272D2B;
 }
@@ -106,11 +112,40 @@ nav a:hover {
     letter-spacing: 0.5em;
 }
 
+/*FOOTER*/
+footer {
+  border-top: 2px solid #272D2B;
+}
+.foot {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 50px 0;
+
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #859591;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+
 /*HOME PAGE > INTRO BOX*/
 .introBox {
-    width: 70%;
     padding: 70px;
-    margin: 12% auto;
+    margin: 15% auto;
     background: white;
     color: #0E1010 ;
     border-radius: 41px;
@@ -200,24 +235,25 @@ nav a:hover {
 /*HOME PAGE > INTEREESTS BOX*/
 .interestsBox {
     margin: 10% auto 0;
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .interestsBox p{
-    width: 80%;
+    width: 60%;
     text-align: center;
+
 }
 
 .interests-grid{
     position: relative;
-    width: 70%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.7em;
+    padding-bottom: 20%;
 }
 
 .interest-card{
@@ -232,12 +268,22 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 }
 
 .card-overlay {
-    padding-top: 20px;
+    height: 13rem;
+    padding: 2rem;
     display: flex;
     flex-direction: row;
+    z-index: -1;
+    position: relative;
+    grid-area: 1/1;
+    display: none;
+}
+
+.card-overlay:hover{
+    display: relative;
 }
 
 .card-overlay svg {
@@ -245,19 +291,26 @@ nav a:hover {
 }
 
 .card-overlay .light-button {
-    border: 1px solid #859591;
+    border: 1px solid pink;
     color: #859591;
 }
 
-.card-overlay .light-button:hover {
-    border: 1px solid #4F5B58;
-    color: #4F5B58;
+.light-button-outline {
+    border: 1px solid white;
+    font-family: 'neutralface-bold', sans-serif;
+    font-size: 0.9rem;
+    color: white;
+    justify-self: right;
+    text-align: center;
+    padding: 4px 25px 4px 25px;;
+    background-color: #272D2B;
+    border-radius: 30px;
+    align-self: center;
+    text-decoration: none;
+}
 }
 
-.interest-card {
-    opacity: 0;
-}
+.light-button-outline:hover {
 
-.interest-card:hover {
-    opacity: 1;
+    background-color: pink;
 }
