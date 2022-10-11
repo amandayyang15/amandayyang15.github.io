@@ -143,9 +143,14 @@ footer a:hover {
 
 
 /*HOME PAGE > INTRO BOX*/
+.viewport-size {
+    height: 87vh;
+    display: flex;
+}
 .introBox {
     padding: 70px;
-    margin: 15% auto;
+    align-self: center;
+    width:100%;
     background: white;
     color: #0E1010 ;
     border-radius: 41px;
@@ -194,6 +199,14 @@ footer a:hover {
     grid-template-columns: repeat(2, 1fr);
     justify-self: right;
     gap: 2em;
+}
+
+.down-arrow {
+    text-decoration: dashed;
+    align-self: flex-end;
+    font-size: 10rem;
+    text
+
 }
 
 .light-button {
