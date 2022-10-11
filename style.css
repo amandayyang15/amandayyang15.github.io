@@ -327,3 +327,14 @@ footer a:hover {
 
     background-color: pink;
 }
+
+/*projects*/
+.projects {
+    padding: 70px;
+    align-self: center;
+    width:100%;
+    background: white;
+    color: #0E1010 ;
+    border-radius: 41px;
+    display: flex;
+}
