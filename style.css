@@ -338,3 +338,9 @@ footer a:hover {
     border-radius: 41px;
     display: flex;
 }
+
+.projects{
+    width: 60%;
+    text-align: center;
+
+}
