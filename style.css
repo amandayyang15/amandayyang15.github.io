@@ -238,8 +238,14 @@ nav{
 	}
 }
 
-.nav-bar ol li:nth-child(2){ animation-delay: .1s }
-.nav-bar ol li:nth-child(3){ animation-delay: .2s }
+.nav-bar ol li:nth-child(2){
+    animation-delay: .1s
+}
+
+.nav-bar ol li:nth-child(3){
+    animation-delay: .2s
+}
+
 /* MAIN */
 main {
     margin: 0px auto;
@@ -346,7 +352,7 @@ main {
 }
 
 .interestsGrid {
-    margin: 1.3em 0 0 0;
+    margin: 2em 0 0 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
@@ -373,20 +379,20 @@ main {
     display: flex;
     flex-direction: column;
     margin: 2em 0 0 0;
-    gap: 6em;
+    gap: 4em;
 }
 
 .project-picL-card {
     display: flex;
     flex-flow: row;
-    gap: 32px;
+    gap: 25px;
     text-align: left;
 }
 
 .project-picR-card {
     display: flex;
     flex-flow: row-reverse;
-    gap: 32px;
+    gap: 25px;
     text-align: left;
 }
 
