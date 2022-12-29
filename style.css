@@ -426,6 +426,8 @@ main {
 
 /* GET IN TOUCH */
 .getInTouch {
+    display: flex;
+    flex-direction: column;
     margin: calc(100vh/3) 0 0 0;
     width:100%;
     text-align: center;
@@ -439,14 +441,29 @@ main {
     gap: 2em;
 }
 
-.getInTouch-socialIcons svg {
-    fill: white;
+.getInTouch-socialIcons img {
+    filter: brightness(100);
     scale: 120%;
 }
 
-.getInTouch-socialIcons svg:hover {
+.getInTouch-socialIcons img:hover {
     fill: var(--color5);
 }
+
+
+span {
+    text-align: center;
+    margin: auto;
+    color: white;
+    opacity: 1;
+    position: absolute;
+
+}
+
+span:hover {
+    opacity: 1;
+}
+
 
 /*FOOTER*/
 footer {
