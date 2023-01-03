@@ -495,3 +495,34 @@ footer {
 .copyright p {
     font-size: var(--fz-sm);
 }
+
+.skillIcon {
+    display: flex;
+    align-items: center;
+    height: 27px;
+}
+
+/* took this tooltip section form w3schools.com :p */
+.tooltip {
+    position: relative;
+    display: inline-block;
+
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #272D2BD9;
+    color: white;
+    text-align: center;
+    padding: var(--button-padding);
+    /* border-radius: var(--border-radius); */
+    bottom: 100%;
+    left: 50%;
+    margin-left: -80px; /* half of the width to center the tooltip */
+    margin-bottom: 5px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
