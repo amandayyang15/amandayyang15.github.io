@@ -246,6 +246,9 @@ nav{
     animation-delay: .2s
 }
 
+
+
+
 /* MAIN */
 main {
     margin: 0px auto;
@@ -594,7 +597,7 @@ footer {
 
   }
 
-  @media (max-width: 1015px) {
+  @media (max-width: 1000px) {
     /* NAVIATION BAR */
     /* INTRO SECTION */
     /* ABOUT ME */
@@ -614,6 +617,7 @@ footer {
     /* NAVIATION BAR */
     /* INTRO SECTION */
     /* ABOUT ME */
+
     /* INTERESTS GRID */
     /* PROJECTS */
     .project-pic {
@@ -638,33 +642,60 @@ footer {
 
   @media  (max-width: 800px) {
     /* NAVIATION BAR */
-    /* INTRO SECTION */
-    /* ABOUT ME */
-    /* INTERESTS GRID */
-    /* PROJECTS */
-    .project-pic {
-        height: 100%;
-        object-fit: cover;
-        aspect-ratio: 2;
-    }
-    .project-picL-card, .project-picR-card {
-        flex-flow: column;
-    }
-    .project-buttons {
-        margin: 1em 0 0 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    /* GET IN TOUCH */
-    /*FOOTER*/
-  }
 
-  @media  (max-width: 800px) {
-    /* NAVIATION BAR */
     /* INTRO SECTION */
+    .introBox {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+    .introBox-text{
+        grid-column-end: span 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introbox-contactIcons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-self: center;
+    }
+
+    .contactIcon {
+        display: flex;
+        align-items: center;
+        height: 36px;
+        fill: var(--color3);
+    }
+
+    .contactIcon:hover{
+        transform: translateY(-1px);
+        fill: var(--color5);
+    }
+
+    .introbox-CTA {
+        display: flex;
+        align-content: center;
+        flex-flow: wrap;
+        gap: 20px;
+        justify-content: start;
+        font-family: 'neutralface-bold', sans-serif;
+        font-size: 0.9rem;
+    }
+
     /* ABOUT ME */
+    .aboutMe {
+        width: 100%;
+    }
+
     /* INTERESTS GRID */
+    .interestsGrid {
+        margin: 2em 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+    }
     /* PROJECTS */
     .project-pic {
         height: 100%;
@@ -678,7 +709,7 @@ footer {
         margin: 1em 0 0 0;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+
     }
     /* GET IN TOUCH */
     /*FOOTER*/
