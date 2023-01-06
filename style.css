@@ -436,9 +436,10 @@ main {
     text-align: left;
 }
 
-.projects img {
-    max-width: 700px;
+.project-pic {
+    object-fit: cover;
     max-height: 333px;
+    aspect-ratio: 1.53;
 }
 
 .project-contents {
@@ -566,3 +567,119 @@ footer {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+/* MEDIA QUERRIES */
+@media (max-width: 1105px) {
+    /* NAVIATION BAR */
+    /* INTRO SECTION */
+    /* ABOUT ME */
+    .aboutMe {
+        flex-direction: column;
+        width: 70%;
+        text-align: center;
+    }
+    .aboutMe h1 {
+        display: flex;
+        justify-content: center;
+    }
+    /* INTERESTS GRID */
+    /* PROJECTS */
+    .project-pic {
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 1.3;
+    }
+    /* GET IN TOUCH */
+    /*FOOTER*/
+
+  }
+
+  @media (max-width: 1015px) {
+    /* NAVIATION BAR */
+    /* INTRO SECTION */
+    /* ABOUT ME */
+    /* INTERESTS GRID */
+    /* PROJECTS */
+    .project-pic {
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 1;
+    }
+    /* GET IN TOUCH */
+    /*FOOTER*/
+
+  }
+
+  @media (max-width: 900px) {
+    /* NAVIATION BAR */
+    /* INTRO SECTION */
+    /* ABOUT ME */
+    /* INTERESTS GRID */
+    /* PROJECTS */
+    .project-pic {
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 2;
+    }
+    .project-picL-card, .project-picR-card {
+        flex-flow: column;
+    }
+
+    .project-buttons {
+        margin: 1em 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /* GET IN TOUCH */
+    /*FOOTER*/
+
+  }
+
+  @media  (max-width: 800px) {
+    /* NAVIATION BAR */
+    /* INTRO SECTION */
+    /* ABOUT ME */
+    /* INTERESTS GRID */
+    /* PROJECTS */
+    .project-pic {
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 2;
+    }
+    .project-picL-card, .project-picR-card {
+        flex-flow: column;
+    }
+    .project-buttons {
+        margin: 1em 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /* GET IN TOUCH */
+    /*FOOTER*/
+  }
+
+  @media  (max-width: 800px) {
+    /* NAVIATION BAR */
+    /* INTRO SECTION */
+    /* ABOUT ME */
+    /* INTERESTS GRID */
+    /* PROJECTS */
+    .project-pic {
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 2;
+    }
+    .project-picL-card, .project-picR-card {
+        flex-flow: column;
+    }
+    .project-buttons {
+        margin: 1em 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /* GET IN TOUCH */
+    /*FOOTER*/
+  }
