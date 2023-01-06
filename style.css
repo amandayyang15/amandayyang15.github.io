@@ -355,7 +355,8 @@ main {
 .interestsGrid {
     margin: 2em 0 0 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
     gap: 15px;
 }
 
@@ -364,9 +365,47 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 4em 0.5em;
+    /* padding: 4em 0.5em; */
     background-color: var(--color2);
     font-family: 'neutralface-bold', sans-serif;
+
+}
+
+.interestsGrid-card img {
+    padding: none;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.interestsGrid-card img:hover {
+    opacity: 1;
+    animation-name: interestGrid-fadein;
+    animation-iteration-count: 1;
+    animation-timing-function: var(--easing);
+    animation-duration: .15s;
+}
+
+@keyframes interestGrid-fadein {
+0% {
+    opacity: 0;
+}
+
+25% {
+    opacity: 0.1;
+}
+
+100% {
+    opacity: 1;
+
+}
+}
+
+.interestsGrid-card .interestsGrid-overlay{
+    position: absolute;
+    z-index: 0;
 }
 
 /* PROJECTS */
