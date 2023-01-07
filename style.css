@@ -572,7 +572,7 @@ footer {
 }
 
 
-/* MEDIA QUERRIES */
+/* MEDIA QUERRIES ⚠️🚨this section is very janky (especially for phone sized windows)...but I will clean it up once I learn JS and figure out nav toggles :)🚨⚠️*/
 @media (max-width: 1105px) {
     /* NAVIATION BAR */
     /* INTRO SECTION */
