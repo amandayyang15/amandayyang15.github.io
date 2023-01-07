@@ -623,7 +623,7 @@ footer {
     .project-pic {
         height: 100%;
         object-fit: cover;
-        aspect-ratio: 2;
+        aspect-ratio: 2.4;
     }
     .project-picL-card, .project-picR-card {
         flex-flow: column;
@@ -641,12 +641,14 @@ footer {
   }
 
   @media  (max-width: 800px) {
+
     /* NAVIATION BAR */
 
     /* INTRO SECTION */
     .introBox {
         grid-template-columns: 1fr;
         gap: 1em;
+        padding: 35px;
     }
     .introBox-text{
         grid-column-end: span 1;
@@ -700,7 +702,7 @@ footer {
     .project-pic {
         height: 100%;
         object-fit: cover;
-        aspect-ratio: 2;
+        aspect-ratio: 2.4;
     }
     .project-picL-card, .project-picR-card {
         flex-flow: column;
@@ -714,3 +716,16 @@ footer {
     /* GET IN TOUCH */
     /*FOOTER*/
   }
+
+@media  (max-width: 800px) {
+  :root {
+    --fz-xxs: 10px;
+    --fz-xs: 12px;
+    --fz-sm: 14px;
+    --fz-md: 16px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 32px;
+    --fz-heading: 36px;
+    --line-height: 1.3em;
+}
