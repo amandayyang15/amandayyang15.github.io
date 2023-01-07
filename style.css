@@ -794,4 +794,7 @@ footer {
         gap: 1em;
         font-size: var(--fz-sm);
     }
+    .copyright {
+        text-align: center;
+    }
   }
