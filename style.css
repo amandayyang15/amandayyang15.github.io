@@ -468,6 +468,32 @@ main {
     gap: 0.8em;
 }
 
+/* took this tooltip section form w3schools.com :p */
+.tooltip {
+    position: relative;
+    display: inline-block;
+
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #272D2BCC;
+    backdrop-filter: blur(2px);
+    color: white;
+    text-align: center;
+    padding: var(--button-padding);
+    /* border-radius: var(--border-radius); */
+    bottom: 100%;
+    left: 50%;
+    margin-left: -80px; /* half of the width to center the tooltip */
+    margin-bottom: 5px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 /* GET IN TOUCH */
 .getInTouch {
     display: flex;
@@ -521,7 +547,6 @@ footer {
   }
 
 .foot {
-    /* margin: 1.3em 0 0 0; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -546,30 +571,6 @@ footer {
     height: 27px;
 }
 
-/* took this tooltip section form w3schools.com :p */
-.tooltip {
-    position: relative;
-    display: inline-block;
-
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #272D2BD9;
-    color: white;
-    text-align: center;
-    padding: var(--button-padding);
-    /* border-radius: var(--border-radius); */
-    bottom: 100%;
-    left: 50%;
-    margin-left: -80px; /* half of the width to center the tooltip */
-    margin-bottom: 5px;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
 
 /* MEDIA QUERRIES */
 @media (max-width: 1105px) {
@@ -641,14 +642,66 @@ footer {
   }
 
   @media  (max-width: 800px) {
+    :root     {
+        --fz-xxs: 10px;
+        --fz-xs: 12px;
+        --fz-sm: 14px;
+        --fz-md: 16px;
+        --fz-lg: 18px;
+        --fz-xl: 20px;
+        --fz-xxl: 24px;
+        --fz-heading: 28px;
+        --line-height: 1.3em;
+
+    }
 
     /* NAVIATION BAR */
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        padding: 10px;
+        border-bottom: var(--border) var(--color4);
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;;
+    }
+
+    .nav-logo {
+        scale: 80%;
+        margin: 0;
+    }
+
+    .nav-bar ol {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+        margin: 0;
+    }
+
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .nav-bar ol li {
+        margin: .7em 0 0 0;
+    }
 
     /* INTRO SECTION */
     .introBox {
         grid-template-columns: 1fr;
         gap: 1em;
-        padding: 35px;
+        padding: 45px;
+        margin: 45px 0 0 0;
     }
     .introBox-text{
         grid-column-end: span 1;
@@ -698,6 +751,10 @@ footer {
         grid-template-rows: repeat(3, minmax(0, 1fr));
         gap: 8px;
     }
+
+    .interestsGrid-card {
+        font-size: var(--fz-sm);
+    }
     /* PROJECTS */
     .project-pic {
         height: 100%;
@@ -710,22 +767,28 @@ footer {
     .project-buttons {
         margin: 1em 0 0 0;
         display: flex;
-        flex-direction: row;
-
+        flex-direction: column;
+        align-items: center;
+        gap: .6em;
     }
     /* GET IN TOUCH */
     /*FOOTER*/
-  }
+    footer {
+        margin: calc(100vh/4) 0 0 0;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 1em 40px;
+        border-top: var(--border) var(--color4);
+      }
 
-@media  (max-width: 800px) {
-  :root {
-    --fz-xxs: 10px;
-    --fz-xs: 12px;
-    --fz-sm: 14px;
-    --fz-md: 16px;
-    --fz-lg: 18px;
-    --fz-xl: 20px;
-    --fz-xxl: 32px;
-    --fz-heading: 36px;
-    --line-height: 1.3em;
-}
+    .foot {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        font-size: var(--fz-sm);
+    }
+  }
