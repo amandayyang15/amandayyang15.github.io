@@ -753,7 +753,7 @@ footer {
     }
 
     .interestsGrid-card {
-        font-size: var(--fz-sm);
+        font-size: var(--fz-xs);
     }
     /* PROJECTS */
     .project-pic {
@@ -772,6 +772,9 @@ footer {
         gap: .6em;
     }
     /* GET IN TOUCH */
+    .getInTouch {
+        margin: calc(100vh/4) 0 0 0;
+    }
     /*FOOTER*/
     footer {
         margin: calc(100vh/4) 0 0 0;
