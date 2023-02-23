@@ -571,6 +571,12 @@ footer {
     height: 27px;
 }
 
+.link-box {
+    max-width: 425px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
 
 /* MEDIA QUERRIES ⚠️🚨this section is very janky (especially for phone sized windows)...but I will clean it up once I learn JS and figure out nav toggles :)🚨⚠️*/
 @media (max-width: 1105px) {
