@@ -95,8 +95,9 @@ h3 {
     font-weight: normal;
     margin: 0;
     line-height: .8em;
-    color: var(--color5);
+    color: var(--color4);
 }
+
 p {
     font-size: var(--fz-md);
     margin: 0;
@@ -457,12 +458,33 @@ main {
     justify-content: space-between;
 }
 
+.project-list-text {
+    font-family: 'avenir';
+    font-size: var(--fz-xs);
+    font-weight: normal;
+    margin: 0;
+    line-height: .8em;
+    color: white;
+    background-color: var(--color2);
+    padding: 9px 10px;
+    border-radius: var(--border-radius);
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .project-CTA {
     font-family: 'neutralface-bold', sans-serif;
     font-size: 0.9rem;
 }
 
 .project-skills {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8em;
+}
+
+.project-CTA-group {
     display: flex;
     flex-direction: row;
     gap: 0.8em;
