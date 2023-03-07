@@ -111,6 +111,8 @@ html {
 
 * {
     box-sizing: border-box;
+    /* min-height: 0;
+    min-width: 0; */
 }
 
 body {
@@ -442,7 +444,7 @@ main {
 
 .project-pic {
     object-fit: cover;
-    max-height: 333px;
+    height: 333px;
     aspect-ratio: 1.53;
 }
 
