@@ -444,7 +444,7 @@ main {
 
 .project-pic {
     object-fit: cover;
-    height: 333px;
+    max-height: 333px;
     aspect-ratio: 1.53;
 }
 
