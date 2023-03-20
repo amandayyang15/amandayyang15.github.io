@@ -544,7 +544,9 @@ main {
 
 .getInTouch-contactIcons img {
     filter: brightness(100);
+    width: 100%;
     scale: 120%;
+
 }
 
 .getInTouch-contactIcons img:hover {
