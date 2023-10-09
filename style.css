@@ -493,6 +493,10 @@ main {
     gap: 0.8em;
 }
 
+.project-skills .contactIcon img{
+    filter: brightness(100);
+}
+
 .project-CTA-group {
     display: flex;
     flex-direction: row;
