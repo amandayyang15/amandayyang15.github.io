@@ -697,20 +697,7 @@ footer {
 
   }
 
-  @media  (max-width: 800px) {
-    :root     {
-        --fz-xxs: 10px;
-        --fz-xs: 12px;
-        --fz-sm: 14px;
-        --fz-md: 16px;
-        --fz-lg: 18px;
-        --fz-xl: 20px;
-        --fz-xxl: 24px;
-        --fz-heading: 28px;
-        --line-height: 1.3em;
-
-    }
-
+  @media  (max-width: 875px) {
     /* NAVIATION BAR */
     header {
         display: flex;
@@ -718,9 +705,10 @@ footer {
         justify-content: center;
         height: auto;
         width: 100%;
-        padding: 10px;
+        padding: 10px 10px 25px 10px;
         border-bottom: var(--border) var(--color4);
     }
+
     nav{
         display: flex;
         flex-direction: column;
@@ -751,6 +739,24 @@ footer {
     .nav-bar ol li {
         margin: .7em 0 0 0;
     }
+  }
+
+  @media  (max-width: 800px) {
+    :root     {
+        --fz-xxs: 10px;
+        --fz-xs: 12px;
+        --fz-sm: 14px;
+        --fz-md: 16px;
+        --fz-lg: 18px;
+        --fz-xl: 20px;
+        --fz-xxl: 24px;
+        --fz-heading: 28px;
+        --line-height: 1.3em;
+
+    }
+
+    /* NAVIATION BAR */
+
 
     /* INTRO SECTION */
     .introBox {
