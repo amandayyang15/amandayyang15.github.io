@@ -615,6 +615,82 @@ footer {
     justify-content: center;
 }
 
+/*LINKS PAGE*/
+.link-box {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 350px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.links-box {
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    justify-items: center;
+    gap: 1em;
+}
+
+.link-box h1 {
+    text-align: center;
+    font-size: var(--fz-xxl);
+}
+.link-box h3 {
+    text-align: center;
+    line-height: normal;
+}
+
+.link-box p {
+    padding-top: 30px;
+    text-align: center;
+    font-size: var(--fz-sm);
+}
+
+.colorw-s-button {
+    width: 100%;
+    background-color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: var(--color1);
+    border-radius: var(--border-radius);
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.colorw-s-button:hover{
+    background-color: var(--color4);
+    color: white;
+    transition: var(--transition);
+}
+
+.colorw-t-button {
+    width: 100%;
+    background-color: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: white;
+    border: var(--border) white;
+    border-radius: var(--border-radius);
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.colorw-t-button:hover{
+    background-color: var(--color5);
+    color: white;
+    transition: var(--transition);
+}
+
+.introbox-contactIcons {
+    filter: brightness(100);
+}
 /* MEDIA QUERRIES ⚠️🚨this section is very janky (especially for phone sized windows)...but I will clean it up once I learn JS and figure out nav toggles :)🚨⚠️*/
 @media (max-width: 1105px) {
     /* NAVIATION BAR */
@@ -868,4 +944,38 @@ footer {
     .copyright {
         text-align: center;
     }
+  }
+
+  /*MOUSE HOVER SYTLING*/
+  .mouse-cursor-gradient-tracking {
+    position: relative;
+    background: #7983ff;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+  }
+
+  .mouse-cursor-gradient-tracking span {
+    position: relative;
+  }
+
+  .mouse-cursor-gradient-tracking::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, pink, transparent);
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease;
+  }
+
+  .mouse-cursor-gradient-tracking:hover::before {
+    --size: 200px;
   }
