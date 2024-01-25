@@ -638,7 +638,7 @@ footer {
 
 .link-box h1 {
     text-align: center;
-    font-size: var(--fz-xxl);
+    font-size: var(--fz-heading);
 }
 .link-box h3 {
     text-align: center;
