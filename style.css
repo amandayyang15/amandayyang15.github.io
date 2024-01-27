@@ -688,9 +688,15 @@ footer {
     transition: var(--transition);
 }
 
-.introbox-contactIcons {
+.link-box-contactIcons {
+    margin: 0 auto;
     filter: brightness(100);
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+    padding-top: 10px;
 }
+
 /* MEDIA QUERRIES ⚠️🚨this section is very janky (especially for phone sized windows)...but I will clean it up once I learn JS and figure out nav toggles :)🚨⚠️*/
 @media (max-width: 1105px) {
     /* NAVIATION BAR */
